@@ -41,7 +41,6 @@
 
 
   
-  
 
   
   
@@ -49,14 +48,13 @@
   
   
 
+  
+  
+
 
   
-  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-extended-black-web.woff2" as="font" type="font/woff2" crossorigin="">
-<link rel="preload" href="https://fonts.twitter.com/chirp/chirp-bold-web.woff2" as="font" type="font/woff2" crossorigin="">
-<link rel="preload" href="https://fonts.twitter.com/chirp/chirp-extended-bold-web.woff2" as="font" type="font/woff2" crossorigin="">
-<link rel="preload" href="https://fonts.twitter.com/chirp/chirp-display-extended-bold-web.woff2" as="font" type="font/woff2" crossorigin="">
-<link rel="preload" href="https://fonts.twitter.com/chirp/chirp-display-bold-web.woff2" as="font" type="font/woff2" crossorigin="">
-
+  
+  
 
   
   
@@ -66,6 +64,20 @@
 
   
   
+  
+  <script nonce="">
+    window.__PRELOADED_MODELS = {};
+    ["/en.model.json", "/en/reports/dsa-risk-assessment-report.model.json"].forEach(function (u) {
+      if (u && !window.__PRELOADED_MODELS[u]) {
+        window.__PRELOADED_MODELS[u] = fetch(u, { credentials: 'same-origin' })
+          .then(function (r) {
+            if (r.ok) return r.json();
+          })
+          .catch(function () {});
+      }
+    });
+  </script>
+
   
   
   
